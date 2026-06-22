@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%">
+  <defs>
+    <radialGradient id="screenGrad" cx="65%" cy="35%" r="60%">
+      <stop offset="0%" stop-color="#cc1df2" />
+      <stop offset="40%" stop-color="#700657" />
+      <stop offset="85%" stop-color="#140a1c" />
+      <stop offset="100%" stop-color="#0b0410" />
+    </radialGradient>
+
+    <linearGradient id="bezelGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6a1a7a" />
+      <stop offset="50%" stop-color="#a61c5d" />
+      <stop offset="100%" stop-color="#e5213b" />
+    </linearGradient>
+
+    <linearGradient id="neckGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#50091d" />
+      <stop offset="100%" stop-color="#93131a" />
+    </linearGradient>
+
+    <linearGradient id="baseGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ba1d24" />
+      <stop offset="30%" stop-color="#730e15" />
+      <stop offset="100%" stop-color="#300307" />
+    </linearGradient>
+  </defs>
+
+  <g transform="translate(0, 10)">
+    <rect x="40" y="40" width="120" height="90" rx="4" fill="url(#bezelGrad)" />
+
+    <rect x="42" y="42" width="116" height="82" rx="2" fill="url(#screenGrad)" />
+
+    <circle cx="100" cy="127" r="1.5" fill="#ffffff" opacity="0.9" />
+
+    <path d="M 94,130 L 106,130 L 104,152 L 96,152 Z" fill="url(#neckGrad)" />
+
+    <path d="M 64,160 
+             C 64,154 75,151 100,151 
+             C 125,151 136,154 136,160 
+             L 132,164 
+             C 120,164 100,165 100,165 
+             C 100,165 80,164 68,164 
+             Z" 
+          fill="url(#baseGrad)" />
+  </g>
+</svg>

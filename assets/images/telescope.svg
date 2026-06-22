@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="background-color: transparent;">
+  <defs>
+    <linearGradient id="telescopeGradient" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0%" stop-color="#7B1FA2"/>
+      <stop offset="100%" stop-color="#F44336"/>
+    </linearGradient>
+    <linearGradient id="rimGradient" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#E1BEE7"/>
+      <stop offset="100%" stop-color="#7B1FA2"/>
+    </linearGradient>
+    <radialGradient id="lensGradient" cx="50%" cy="50%" r="50%">
+      <stop offset="60%" stop-color="#F8BBD0"/>
+      <stop offset="100%" stop-color="#D81B60"/>
+    </radialGradient>
+  </defs>
+
+  <g filter="drop-shadow(0 4px 6px rgba(0,0,0,0.3))">
+    <path d="M 400,100 L 410,120 L 430,125 L 415,140 L 420,160 L 400,150 L 380,160 L 385,140 L 370,125 L 390,120 Z" fill="#BF360C" />
+    
+    <path d="M 120,200 L 130,220 L 150,225 L 135,240 L 140,260 L 120,250 L 100,260 L 105,240 L 90,225 L 110,220 Z" fill="#6A1B9A" />
+    
+    <path d="M 420,380 L 430,400 L 450,405 L 435,420 L 440,440 L 420,430 L 400,440 L 405,420 L 390,405 L 410,400 Z" fill="#B71C1C" />
+
+    <path d="M 130,440 L 420,180 A 70,70 0 0,0 350,110 L 60,370 A 70,70 0 0,0 130,440 Z" fill="url(#telescopeGradient)" />
+    
+    <path d="M 140,410 L 380,190 Q 360,160 310,180 Z" fill="rgba(255,255,255,0.25)" />
+
+    <path d="M 350,110 A 70,70 0 0,1 420,180 A 65,65 0 0,1 350,110 Z" fill="url(#rimGradient)" />
+    <ellipse cx="385" cy="145" rx="70" ry="70" fill="none" stroke="url(#rimGradient)" stroke-width="12" />
+
+    <ellipse cx="385" cy="145" rx="60" ry="60" fill="url(#lensGradient)" />
+    
+    <ellipse cx="370" cy="130" rx="20" ry="10" fill="rgba(255,255,255,0.7)" transform="rotate(-30,370,130)" />
+  </g>
+</svg>
